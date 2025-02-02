@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mishari's Resume</title>
+    <link rel="icon" href="assets/images/cv.png" type="image/png" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+ 
+    
+    <link rel="stylesheet" href="assets/css/toggle-switch.css" />
+
+    <!-- DaisyUI for beautiful UI themes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+      rel="stylesheet"
+    />
+    <!-- Flowbite CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.css"
+    />
+  </head>
+  <body class="bg-base-100 text-base-content">
+  
+    
+     
+     <!-- Navbar -->
+     <nav class="bg-base-200 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-base-content">Mishari Al-Buhairi</a>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="nav-lin/">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    
+    <!-- Main Content Container -->
+    <main class="container mx-auto px-4 py-12 space-y-12">
+      <!-- Education & Projects Section -->
+      <section id="education-projects">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Education Column -->
+          <div>
+            <h6 class="text-sm font-semibold text-primary uppercase tracking-wider">
+              Resume
+            </h6>
+            <h2 class="text-3xl font-bold mt-1 mb-6">Education</h2>
+            <div class="space-y-6">
+              <div class="p-6 border-l-4 border-primary bg-base-200 rounded">
+                <span
+                  class="badge bg-primary text-white inline-block mb-2"
+                  >2021 - Present</span
+                >
+                <h6 class="text-xl font-semibold">
+                  Bachelor Degree in Computer Science
+                </h6>
+                <p class="text-sm text-gray-600">King Saud University</p>
+                <p class="text-sm">Expected Graduation Date: Sep 2025</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Projects Column -->
+          
+        </div>
+      </section>
+      <br>
+
+      <!-- Technologies Section -->
+      <section id="technologies">
+        <h2 class="text-3xl font-bold mb-6">Technologies</h2>
+        <div
+          class="flex flex-wrap gap-8 items-center justify-center sm:justify-start"
+        >
+          <img
+            src="assets/images/python_icon.png"
+            alt="Python"
+            class="w-12 h-12"
+          />
+          <img
+            src="assets/images/flask_icon.png"
+            alt="Flask"
+            class="w-12 h-12"
+          />
+          <img
+            src="assets/images/fastapi_icon.png"
+            alt="FastAPI"
+            class="w-12 h-12"
+          />
+          <img
+            src="assets/images/Bootstrap_icon.png"
+            alt="Bootstrap"
+            class="w-12 h-12"
+          />
+        </div>
+      </section>
+
+        <br>
+      <!-- Skills Section -->
+      <section id="skills">
+        <h6 class="text-sm font-semibold text-primary uppercase tracking-wider">
+          What I Know
+        </h6>
+        <h2 class="text-3xl font-bold mt-1 mb-6">Skills</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="flex items-center p-6 border rounded-lg bg-base-200 shadow">
+            <img
+              src="assets/images/web-design.png"
+              alt="Web Development"
+              class="w-8 h-8 mr-4"
+            />
+            <div>
+              <h5 class="font-semibold text-xl">Web Development</h5>
+              <p class="text-sm">
+                Flask, FastAPI, Bootstrap, Tailwind, SQL.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center p-6 border rounded-lg bg-base-200 shadow">
+            <img
+              src="assets/images/microchip-ai.png"
+              alt="NLP & Machine Learning"
+              class="w-8 h-8 mr-4"
+            />
+            <div>
+              <h5 class="font-semibold text-xl">NLP & Machine Learning</h5>
+              <p class="text-sm">
+                Word Embedding Models, Semantic Analysis, Information Retrieval
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center p-6 border rounded-lg bg-base-200 shadow">
+            <img
+              src="assets/images/002-development.svg"
+              alt="Programming Languages"
+              class="w-8 h-8 mr-4"
+            />
+            <div>
+              <h5 class="font-semibold text-xl">Programming Languages</h5>
+              <p class="text-sm">
+                Python, Java, HTML, CSS, JavaScript, LaTeX.
+              </p>
+            </div>
+          </div>
+          <div class="flex items-center p-6 border rounded-lg bg-base-200 shadow">
+            <img
+              src="assets/images/square-terminal.png"
+              alt="Tools & Platforms"
+              class="w-8 h-8 mr-4"
+            />
+            <div>
+              <h5 class="font-semibold text-xl">Tools & Platforms</h5>
+              <p class="text-sm">Git, Jupyter Notebooks</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <br>
+
+      <!-- Publications Section -->
+      <section id="publications">
+        <h2 class="text-3xl font-bold mb-6">Publications</h2>
+        <div class="p-6 border rounded-lg bg-base-200 shadow">
+          <strong>
+            Nabesh: Building a Scalable Arabic Word Similarity Ranker
+            <br />
+          </strong>
+          Mohamed Alkaoud∗, Mishari Albuhairi†, Abdulaziz Alabdulkarim‡,
+          Mohammed AlSowelim§<br /><br />
+          waiting for approval from
+          <strong>IEEE Transactions on Communications</strong>
+        </div>
+      </section>
+
+      
+    </main>
+
+    <!-- Scripts -->
+    <!-- Theme Switch Script -->
+       <!-- Theme Switch Script -->
+       <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          const themeSwitch = document.getElementById("theme-switch");
+          const savedTheme = localStorage.getItem("theme") || "dark";
+          document.documentElement.setAttribute("data-theme", savedTheme);
+          themeSwitch.checked = savedTheme === "dark";
+  
+          themeSwitch.addEventListener("change", () => {
+            const theme = themeSwitch.checked ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+          });
+        });
+      </script>
+</html>

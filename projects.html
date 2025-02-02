@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio - Mishari's Resume</title>
+    <link rel="icon" href="assets/images/cv.png" type="image/png" />
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <!-- DaisyUI for themes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css"
+      rel="stylesheet"
+    />
+    <!-- Flowbite CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.css"
+    />
+    <!-- Custom CSS for text shadow -->
+    <style>
+      .text-shadow {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+      }
+    </style>
+  </head>
+  <body class="bg-base-100 text-base-content">
+   
+    
+     <!-- Navbar -->
+   
+     <!-- Navbar -->
+     <nav class="bg-base-200 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-base-content">Mishari Al-Buhairi</a>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="nav-lin/">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+  
+
+    <main class="container mx-auto px-4 py-12 space-y-12">
+      <!-- Header for the Portfolio Page -->
+      <header>
+        <h6 class="text-sm font-semibold text-primary uppercase tracking-wider">
+          Portfolio
+        </h6>
+        <h2 class="text-3xl font-bold mt-1 mb-6">My Work</h2>
+      </header>
+
+      <!-- Portfolio Items Section -->
+      <section id="portfolio-items">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Portfolio Item: UNIBAG -->
+          <a
+            href="https://unibag.ngrok.io"
+            class="group block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="assets/images/unibag.png"
+              alt="UNIBAG"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"
+            >
+              <h5 class="text-white text-xl font-bold mb-2 text-shadow">
+                UNIBAG
+              </h5>
+              <p class="text-white text-sm text-center px-2 text-shadow">
+                AI-powered platform that streamlines your study process by
+                organizing your materials, generating practice questions, and
+                tracking your progress.
+              </p>
+            </div>
+          </a>
+
+          <!-- Portfolio Item: EduThon Website -->
+          <a
+            href="https://eduthon.sa"
+            class="group block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="assets/images/eduthon_index.jpg"
+              alt="EduThon Website"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"
+            >
+              <h5 class="text-white text-xl font-bold mb-2 text-shadow">
+                EduThon Website
+              </h5>
+              <p class="text-white text-sm text-center px-2 text-shadow">
+                Website enabling registration, team creation, and communication
+                for hackathon participants.
+              </p>
+            </div>
+          </a>
+
+          <!-- Portfolio Item: Nabesh Game -->
+          <a
+            href="https://nabesh.xyz"
+            class="group block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="assets/images/nabesh_ui.jpg"
+              alt="Nabesh Game"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"
+            >
+              <h5 class="text-white text-xl font-bold mb-2 text-shadow">
+                Nabesh Game
+              </h5>
+              <p class="text-white text-sm text-center px-2 text-shadow">
+                Arabic word similarity game with an AI-powered ranking system,
+                similar to Contexto by NYTimes.
+              </p>
+            </div>
+          </a>
+
+          <!-- Portfolio Item: Task Management -->
+          <a
+            href="#"
+            class="group block relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
+          >
+            <img
+              src="assets/images/task_app.jpg"
+              alt="Task Management"
+              class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300"
+            />
+            <div
+              class="absolute inset-0 bg-black bg-opacity-60 backdrop-blur-sm flex flex-col justify-center items-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 shadow-lg"
+            >
+              <h5 class="text-white text-xl font-bold mb-2 text-shadow">
+                Task Management
+              </h5>
+              <p class="text-white text-sm text-center px-2 text-shadow">
+                A Trello-like task management app developed for the cybersecurity
+                club at King Saud University.
+              </p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- Theme Switch Script -->
+    <script>
+      const themeSwitch = document.getElementById("theme-switch");
+      const savedTheme = localStorage.getItem("theme") || "dark";
+      document.documentElement.setAttribute("data-theme", savedTheme);
+      themeSwitch.checked = savedTheme === "dark";
+
+      themeSwitch.addEventListener("change", () => {
+        const theme = themeSwitch.checked ? "dark" : "light";
+        document.documentElement.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme);
+      });
+    </script>
+    <!-- Flowbite JS -->
+    <script src="https://unpkg.com/flowbite@1.6.3/dist/flowbite.js"></script>
+  </body>
+</html>

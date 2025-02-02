@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mishari Al-Buhairi</title>
+    <link rel="icon" href="assets/images/cv.png" type="image/png">
+    <!-- Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.7/dist/tailwind.min.css" rel="stylesheet">
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet">
+    <!-- Flowbite CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.6.3/dist/flowbite.min.css">
+    <style>
+        .text-shadow {
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+    </style>
+</head>
+<body class="bg-base-100 text-base-content">
+
+
+     <!-- Navbar -->
+     <nav class="bg-base-200 shadow-lg">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="/" class="text-xl font-bold text-base-content">Mishari Al-Buhairi</a>
+            <ul class="flex space-x-6">
+                <li><a href="/" class="nav-lin/">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="cv.html" class="nav-link">CV</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+
+
+
+    <main class="container mx-auto px-4 py-12 space-y-12">
+        <!-- Header -->
+        <header>
+            <h6 class="text-sm font-semibold text-primary uppercase tracking-wider">Contact</h6>
+            <h2 class="text-3xl font-bold mt-1 mb-6">Get in Touch</h2>
+        </header>
+
+        <!-- Contact Section -->
+        <section id="contact-info" class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Profile & CV Download -->
+            <div class="text-center space-y-4 flex flex-col items-center">
+                <div class="profile-img-wrapper">
+                    <img src="assets/images/profile_pic_mini.jpg" alt="Mishari Al-Buhairi" class="w-32 h-32 rounded-full shadow-lg">
+                </div>
+                <h1 class="text-2xl font-bold text-shadow">Mishari Al-Buhairi</h1>
+                <a href="assets/resume/Mishari-resume.pdf" download="Mishari-resume.pdf">
+                    <button class="btn btn-primary rounded-lg flex items-center justify-center gap-2 px-4 py-2">
+                        <img src="assets/images/download.svg" alt="Download" class="w-5 h-5"> DOWNLOAD CV
+                    </button>
+                </a>
+            </div>
+
+            <!-- Personal Information -->
+            <div class="widget card bg-base-200 shadow-lg p-6 rounded-lg">
+                <div class="card-body items-center">
+                    <h5 class="text-lg font-semibold text-primary">Personal Information</h5>
+                    <p><strong>Date of Birth:</strong> 2003/09/04</p>
+                    <p><strong>PHONE:</strong> +966 500585061</p>
+                    <p><strong>MAIL:</strong> <a href="mailto:mishari@albuhairi.me" class="text-primary">mishari@albuhairi.me</a></p>
+                    <p><strong>Location:</strong> Riyadh, Saudi Arabia</p>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <!-- Theme Switch Script -->
+    <script>
+        const themeSwitch = document.getElementById("theme-switch");
+        const savedTheme = localStorage.getItem("theme") || "dark";
+        document.documentElement.setAttribute("data-theme", savedTheme);
+        themeSwitch.checked = savedTheme === "dark";
+        themeSwitch.addEventListener("change", () => {
+            const theme = themeSwitch.checked ? "dark" : "light";
+            document.documentElement.setAttribute("data-theme", theme);
+            localStorage.setItem("theme", theme);
+        });
+    </script>
+
+    <!-- Flowbite JS -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.1/dist/flowbite.min.js"></script>
+
+
+</body>
+</html>
